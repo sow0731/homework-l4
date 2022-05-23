@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>WantAndHaveList</title>
+</head>
+<body>
+    <table border=1>
+        <tr>
+            <th>ID</th>
+            <th>TITLE</th>
+            <th>ARTIST</th>
+            <th>LABEL</th>
+            <th>RELEASE_YEAR</th>
+            <th>STATUS</th>
+        </tr>
+        <tr th:each="w:${want_and_have}">
+            <td th:text="${w.id}"></td>
+            <td th:text="${w.title}"></td>
+            <td th:text="${w.artist}"></td>
+            <td th:text="${w.label}"></td>
+            <td th:text="${w.release_year}"></td>
+            <td th:text="${w.status}"></td>
+        </tr>
+    </table>
+</body>
+</html>
