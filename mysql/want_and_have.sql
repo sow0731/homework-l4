@@ -1,17 +1,13 @@
-
 drop table IF EXISTS want_and_have;
 
-create TABLE want_and_have
-(
-id                  INT unsigned AUTO_INCREMENT,
-title               VARCHAR(100)    NOT NULL,
-artist              VARCHAR(100)    NOT NULL,
-label               VARCHAR(100)    NOT NULL,
-release_year        YEAR(4)         NOT NULL,
-status              VARCHAR(4)      NOT NULL,
-
-PRIMARY KEY (id)
-
+create TABLE want_and_have (
+  id INT unsigned AUTO_INCREMENT,
+  title VARCHAR(100) NOT NULL,
+  artist VARCHAR(100) NOT NULL,
+  label VARCHAR(100) NOT NULL,
+  release_year YEAR(4) NOT NULL,
+  status VARCHAR(4) NOT NULL,
+  PRIMARY KEY (id)
 );
 
 insert into want_and_have (id, title, artist, label, release_year, status)
