@@ -10,7 +10,6 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: example
       MYSQL_DATABASE: want_and_have_list
-      MYSQL_USER: root
     ports:
       - 3307:3306
     volumes:
